@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+@use './global/variables.scss' as v;
+@use './components/header.scss';
+@use './components/table.scss';
+@use './components/player.scss';
+@use './components/card.scss';
+
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&family=Nanum+Pen+Script&display=swap');
+
+html {
+  font-size: 62.5%;
+}
+
+html, body {
+  font-family: v.$secondary-font;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.4rem;
+  @media screen and (min-width: v.$breakpoint-md) {
+    font-size: 1.6rem;
+  }
+}
+
+h1 {
+  font-family: v.$primary-font;
+  text-align: center;
+  font-size: 2.4rem;
+  margin-top: 0;
+  @media screen and (min-width: v.$breakpoint-md) {
+    font-size: 3.2rem;
+  }  
+}
+
+.container {
+  width: 100%;
+  padding: 2rem;
+  box-sizing: border-box;
+}
